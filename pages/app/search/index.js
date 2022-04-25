@@ -17,15 +17,12 @@ export default function App({ Profile, NavBar }) {
   };
 
   const handleSearch = (searchData) => {
-    fetch(
-      `https://api-indiesingles.herokuapp.com/api/search/name?name=${searchData}`,
-      {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      }
-    )
+    fetch(`https://takichay.herokuapp.com/api/search/name?name=${searchData}`, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
+      },
+    })
       .then((res) => res.json())
       .then((data) => {
         setUsers(data.results.users);
@@ -70,7 +67,7 @@ export default function App({ Profile, NavBar }) {
                 <button
                   type="submit"
                   disabled={search === ""}
-                  className="px-4 py-2 mr-8 font-bold text-white bg-green-500 rounded w-96 hover:bg-blue-700 text-gray-50 disabled:bg-green-200 disabled:cursor-not-allowed"
+                  className="px-4 py-2 mr-8 font-bold text-white bg-blue-500 rounded w-96 hover:bg-blue-700 text-gray-50 disabled:bg-blue-200 disabled:cursor-not-allowed"
                 >
                   Buscar
                 </button>
@@ -97,7 +94,7 @@ export default function App({ Profile, NavBar }) {
                             />
                             <Play
                               className="absolute transition-transform cursor-pointer right-2 bottom-4 group-hover:scale-110"
-                              fill="text-green-200"
+                              fill="text-blue-200"
                               width={60}
                               height={60}
                             />

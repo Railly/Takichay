@@ -77,7 +77,7 @@ export default function App({ Profile, NavBar, user, refetchUser }) {
                       />
                     </div>
                   </div>
-                  <div className="flex flex-col items-start p-4 mx-16 mt-4 border border-green-50">
+                  <div className="flex flex-col items-start p-4 mx-16 mt-4 border border-blue-50">
                     <h1 className="mb-4 ml-4 text-5xl font-bold">
                       {user.name}
                     </h1>
@@ -137,7 +137,7 @@ export default function App({ Profile, NavBar, user, refetchUser }) {
                       onChange={handleFileChange}
                     />
                   </div>
-                  <span className="w-64 px-4 py-4 my-2 text-center bg-black border border-green-500 rounded-full text-gray-50">
+                  <span className="w-64 px-4 py-4 my-2 text-center bg-black border border-blue-500 rounded-full text-gray-50">
                     Subir imagen
                   </span>
                   <span className="text-xs text-red-500">
@@ -154,7 +154,7 @@ export default function App({ Profile, NavBar, user, refetchUser }) {
                   onClick={() => {
                     setModal("description");
                   }}
-                  className="w-full px-4 py-2 mt-4 text-white transition-colors bg-green-600 rounded-md hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-default"
+                  className="w-full px-4 py-2 mt-4 text-white transition-colors bg-blue-600 rounded-md hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-default"
                 >
                   Editar descripción
                 </button>
@@ -163,7 +163,7 @@ export default function App({ Profile, NavBar, user, refetchUser }) {
                   onClick={() => {
                     setModal("password");
                   }}
-                  className="w-full px-4 py-2 mt-4 text-white transition-colors bg-green-600 rounded-md hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-default"
+                  className="w-full px-4 py-2 mt-4 text-white transition-colors bg-blue-600 rounded-md hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-default"
                 >
                   Editar Contraseña
                 </button>
@@ -172,7 +172,7 @@ export default function App({ Profile, NavBar, user, refetchUser }) {
                   onClick={() => {
                     setModal("image");
                   }}
-                  className="w-full px-4 py-2 mt-4 text-white transition-colors bg-green-600 rounded-md hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-default"
+                  className="w-full px-4 py-2 mt-4 text-white transition-colors bg-blue-600 rounded-md hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-default"
                 >
                   Editar foto de Perfil
                 </button>

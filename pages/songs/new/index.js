@@ -38,7 +38,7 @@ export default function App({
     formData.append("file", fileImage);
     formData.append("song", fileAudio);
     window
-      .fetch("https://api-indiesingles.herokuapp.com/api/song", {
+      .fetch("https://takichay.herokuapp.com/api/song", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -114,7 +114,7 @@ export default function App({
                           }
                         />
                       </div>
-                      <span className="w-64 px-4 py-4 my-2 text-center bg-black border border-green-500 rounded-full text-gray-50">
+                      <span className="w-64 px-4 py-4 my-2 text-center bg-black border border-blue-500 rounded-full text-gray-50">
                         Subir imagen
                       </span>
                       {fileImage && (
@@ -141,7 +141,7 @@ export default function App({
                           }
                         />
                       </div>
-                      <span className="w-64 px-4 py-4 my-2 text-center bg-black border border-green-500 rounded-full text-gray-50">
+                      <span className="w-64 px-4 py-4 my-2 text-center bg-black border border-blue-500 rounded-full text-gray-50">
                         Subir canción
                       </span>
                       {fileAudio && (
@@ -170,7 +170,7 @@ export default function App({
                   </div>
                 </div>
                 <button
-                  className="w-64 px-4 py-2 my-4 text-white bg-green-500 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-64 px-4 py-2 my-4 text-white bg-blue-500 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
                   type="submit"
                   disabled={disabled}
                 >

@@ -85,11 +85,11 @@ export default function jPlayer({
           {audioEl?.current && (
             <div className="flex flex-row w-full">
               <PlayBar
-                className="h-1 bg-gray-300"
+                className="h-1 bg-gray-800"
                 width={`${Math.floor((currentTime / duration) * 100)}%`}
               />
               <PlayBar
-                className="h-1 bg-gray-600"
+                className="h-1 bg-gray-400"
                 width={`${Math.floor(
                   ((duration - currentTime) / duration) * 100
                 )}%`}

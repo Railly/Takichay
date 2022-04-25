@@ -28,7 +28,7 @@ export default function Modal({ setModal, handleDelete }) {
               </button>
               <button
                 onClick={handleDelete}
-                className="px-4 py-2 ml-4 font-bold text-white transition-colors bg-green-500 rounded-full hover:bg-green-700"
+                className="px-4 py-2 ml-4 font-bold text-white transition-colors bg-blue-500 rounded-full hover:bg-blue-700"
               >
                 Eliminar
               </button>
@@ -59,7 +59,7 @@ export function SucessModal({ setModal, authorId }) {
                   setModal(false);
                   router.back();
                 }}
-                className="px-4 py-2 ml-4 font-bold text-white transition-colors bg-green-500 rounded-full hover:bg-green-700"
+                className="px-4 py-2 ml-4 font-bold text-white transition-colors bg-blue-500 rounded-full hover:bg-blue-700"
               >
                 Aceptar
               </button>
@@ -80,7 +80,7 @@ export function CommentModal({ setModal, songId, setReload, reload }) {
       songId,
     };
 
-    fetch("https://api-indiesingles.herokuapp.com/api/commentarySong", {
+    fetch("https://takichay.herokuapp.com/api/commentarySong", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -132,7 +132,7 @@ export function CommentModal({ setModal, songId, setReload, reload }) {
               <div className="flex justify-end">
                 <button
                   type="submit"
-                  className="px-4 py-2 ml-4 font-bold text-white transition-colors bg-green-500 rounded-full hover:bg-green-700"
+                  className="px-4 py-2 ml-4 font-bold text-white transition-colors bg-blue-500 rounded-full hover:bg-blue-700"
                 >
                   Enviar
                 </button>
@@ -209,7 +209,7 @@ export function UpdateModal({ setModal, field, refetchUser, displayName }) {
                     onChange={handleFileChange}
                   />
                 </div>
-                <span className="w-64 px-4 py-4 my-2 text-center bg-black border border-green-500 rounded-full text-gray-50">
+                <span className="w-64 px-4 py-4 my-2 text-center bg-black border border-blue-500 rounded-full text-gray-50">
                   Subir imagen
                 </span>
                 {/* <span className="text-xs text-red-500">
@@ -236,7 +236,7 @@ export function UpdateModal({ setModal, field, refetchUser, displayName }) {
               <div className="flex justify-end">
                 <button
                   type="submit"
-                  className="px-4 py-2 ml-4 font-bold text-white transition-colors bg-green-500 rounded-full hover:bg-green-700"
+                  className="px-4 py-2 ml-4 font-bold text-white transition-colors bg-blue-500 rounded-full hover:bg-blue-700"
                 >
                   Enviar
                 </button>

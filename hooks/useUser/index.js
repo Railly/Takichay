@@ -8,7 +8,7 @@ export default function useUser() {
     const token = window.localStorage.getItem("token");
     if (token) {
       window
-        .fetch("https://api-indiesingles.herokuapp.com/api/user", {
+        .fetch("https://takichay.herokuapp.com/api/user", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

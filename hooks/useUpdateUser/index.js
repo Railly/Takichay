@@ -1,6 +1,6 @@
 export default function useUpdateUser(refetchUser, setModal) {
   const handleUpdateUser = (formData) => {
-    fetch("https://api-indiesingles.herokuapp.com/api/user", {
+    fetch("https://takichay.herokuapp.com/api/user", {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${window.localStorage.getItem("token")}`,

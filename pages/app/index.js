@@ -17,7 +17,7 @@ export default function App({ Profile, NavBar, songs }) {
             onClick={() => {
               router.push("/songs/new");
             }}
-            className="z-10 px-4 py-2 mr-8 font-bold text-white bg-green-500 rounded hover:bg-blue-700"
+            className="z-10 px-4 py-2 mr-8 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
           >
             Agregar canciones
           </button>
@@ -47,7 +47,7 @@ export default function App({ Profile, NavBar, songs }) {
                       />
                       <Play
                         className="absolute transition-transform cursor-pointer right-2 bottom-4 group-hover:scale-110"
-                        fill="text-green-200"
+                        fill="text-blue-200"
                         width={60}
                         height={60}
                       />

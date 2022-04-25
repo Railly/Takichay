@@ -7,14 +7,11 @@ export default function useGetAllSongs(user) {
   useEffect(() => {
     if (user) {
       window
-        .fetch(
-          `https://api-indiesingles.herokuapp.com/api/songs?from=0&limit=0`,
-          {
-            headers: {
-              Authorization: `Bearer ${window.localStorage.getItem("token")}`,
-            },
-          }
-        )
+        .fetch(`https://takichay.herokuapp.com/api/songs?from=0&limit=0`, {
+          headers: {
+            Authorization: `Bearer ${window.localStorage.getItem("token")}`,
+          },
+        })
         .then((res) => res.json())
         .then((data) => {
           setAllSongs(data);

@@ -20,7 +20,7 @@ export default function Register() {
 
   const onSubmit = (data) => {
     window
-      .fetch("https://api-indiesingles.herokuapp.com/api/user", {
+      .fetch("https://takichay.herokuapp.com/api/user", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -94,7 +94,7 @@ export default function Register() {
           </span>
         </div>
         <button
-          className="px-20 py-2 mt-4 font-bold text-white bg-green-700 rounded-full hover:bg-green-600 focus:outline-none focus:shadow-outline"
+          className="px-20 py-2 mt-4 font-bold text-white bg-blue-700 rounded-full hover:bg-blue-600 focus:outline-none focus:shadow-outline"
           type="submit"
         >
           Registrarse

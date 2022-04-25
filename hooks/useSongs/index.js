@@ -8,7 +8,7 @@ export default function useSongs(user) {
     if (user) {
       window
         .fetch(
-          `https://api-indiesingles.herokuapp.com/api/songs?authorId=${user._id}&from=0&limit=0`,
+          `https://takichay.herokuapp.com/api/songs?authorId=${user._id}&from=0&limit=0`,
           {
             headers: {
               Authorization: `Bearer ${window.localStorage.getItem("token")}`,

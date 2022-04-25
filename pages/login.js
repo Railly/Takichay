@@ -20,7 +20,7 @@ export default function Login() {
   });
   const onSubmit = (data) => {
     window
-      .fetch("https://api-indiesingles.herokuapp.com/api/user/login", {
+      .fetch("https://takichay.herokuapp.com/api/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -92,7 +92,7 @@ export default function Login() {
           </span>
         </div>
         <button
-          className="px-20 py-2 my-4 font-bold text-white bg-green-700 rounded-full hover:bg-green-600 focus:outline-none focus:shadow-outline"
+          className="px-20 py-2 my-4 font-bold text-white bg-blue-700 rounded-full hover:bg-blue-600 focus:outline-none focus:shadow-outline"
           type="submit"
         >
           Iniciar Session

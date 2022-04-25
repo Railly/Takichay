@@ -14,7 +14,7 @@ export default function NavBar(allUsers, user) {
   };
 
   return (
-    <nav className="h-screen text-lg font-medium bg-black w-80">
+    <nav className="h-screen text-lg font-medium text-black bg-gray-200 w-80">
       <div className="pt-4 pl-4">
         <Logo />
       </div>
@@ -22,7 +22,7 @@ export default function NavBar(allUsers, user) {
         <li className="pt-4">
           <Link href="/app">
             <a className="flex flex-row">
-              <Home />
+              <Home fill="#000" />
               <span className="ml-2">Inicio</span>
             </a>
           </Link>
@@ -30,14 +30,14 @@ export default function NavBar(allUsers, user) {
         <li className="pt-4">
           <Link href="/app/search">
             <a className="flex flex-row">
-              <Search />
+              <Search fill="#000" />
               <span className="ml-2">Buscar</span>
             </a>
           </Link>
         </li>
       </ul>
       <p className="flex flex-row pt-4 pb-2 mx-4">
-        <Music />
+        <Music fill="#000" />
         <span className="ml-2">Tus suscripciones</span>
       </p>
       <ul className="overflow-y-scroll">
@@ -59,7 +59,7 @@ export default function NavBar(allUsers, user) {
         onClick={() => {
           logout();
         }}
-        className="p-4 m-4 text-white transition-colors bg-green-500 rounded-md hover:bg-green-600"
+        className="p-4 m-4 text-white transition-colors bg-blue-500 rounded-md hover:bg-blue-600"
       >
         Cerrar Sesión
       </button>

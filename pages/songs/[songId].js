@@ -27,7 +27,7 @@ export default function App({
   const handleDelete = () => {
     window
       .fetch(
-        `https://api-indiesingles.herokuapp.com/api/song?songId=${songId}`,
+        `https://takichay.herokuapp.com/api/song?songId=${songId}`,
 
         {
           method: "DELETE",
@@ -51,15 +51,12 @@ export default function App({
   useEffect(() => {
     if (songId) {
       window
-        .fetch(
-          `https://api-indiesingles.herokuapp.com/api/song?songId=${songId}`,
-          {
-            method: "GET",
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem("token")}`,
-            },
-          }
-        )
+        .fetch(`https://takichay.herokuapp.com/api/song?songId=${songId}`, {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        })
         .then((res) => res.json())
         .then((data) => {
           const newData = {
@@ -139,7 +136,7 @@ export default function App({
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center justify-center h-full px-8 ml-8 border border-green-50">
+                  <div className="flex flex-col items-center justify-center h-full px-8 ml-8 border border-blue-50">
                     <Song width={50} height={50} />
                     <h2 className="mb-2 text-xl font-bold">{song.genre}</h2>
                     <p className="w-56 mb-4 text-center text-md">
@@ -163,7 +160,7 @@ export default function App({
                       <Play
                         className="mt-4 transition-transform cursor-pointer right-2 bottom-4 hover:scale-110"
                         onClick={handlePlay}
-                        fill="text-green-200"
+                        fill="text-blue-200"
                         width={100}
                         height={100}
                       />
@@ -179,7 +176,7 @@ export default function App({
                       </button>
                     )}
                   </div>
-                  <div className="flex flex-col h-full px-4 pt-2 ml-8 bg-gray-800 border border-green-50">
+                  <div className="flex flex-col h-full px-4 pt-2 ml-8 bg-gray-800 border border-blue-50">
                     <h1 className="mb-2 text-xl font-bold">Comentarios</h1>
                     <span className="pb-2 text-sm text-gray-400">
                       {song.songCommentaries.length} comentarios
@@ -211,7 +208,7 @@ export default function App({
                       onClick={() => {
                         setModal("comment");
                       }}
-                      className="px-4 py-2 m-4 font-bold text-white transition-colors bg-green-500 rounded-full hover:bg-green-700"
+                      className="px-4 py-2 m-4 font-bold text-white transition-colors bg-blue-500 rounded-full hover:bg-blue-700"
                     >
                       Agregar comentario
                     </button>

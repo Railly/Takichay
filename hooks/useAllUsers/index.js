@@ -6,14 +6,11 @@ export default function useAllUsers() {
 
   useEffect(() => {
     window
-      .fetch(
-        "https://api-indiesingles.herokuapp.com/api/users?from=0&limit=10",
-        {
-          headers: {
-            Authorization: `Bearer ${window.localStorage.getItem("token")}`,
-          },
-        }
-      )
+      .fetch("https://takichay.herokuapp.com/api/users?from=0&limit=10", {
+        headers: {
+          Authorization: `Bearer ${window.localStorage.getItem("token")}`,
+        },
+      })
       .then((res) => res.json())
       .then((data) => {
         setAllUsers(data);

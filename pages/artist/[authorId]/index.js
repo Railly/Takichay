@@ -32,7 +32,7 @@ export default function Artist({
   const handleSubscribe = () => {
     window
       .fetch(
-        `https://api-indiesingles.herokuapp.com/api/user/subscribe?userToSubscribeId=${authorId}`,
+        `https://takichay.herokuapp.com/api/user/subscribe?userToSubscribeId=${authorId}`,
         {
           method: "PUT",
           headers: {
@@ -51,7 +51,7 @@ export default function Artist({
   const handleUnsubscribe = () => {
     window
       .fetch(
-        `https://api-indiesingles.herokuapp.com/api/user/unsubscribe?userToUnsubscribeId=${authorId}`,
+        `https://takichay.herokuapp.com/api/user/unsubscribe?userToUnsubscribeId=${authorId}`,
         {
           method: "PUT",
           headers: {
@@ -71,7 +71,7 @@ export default function Artist({
     if (authorId) {
       window
         .fetch(
-          `https://api-indiesingles.herokuapp.com/api/songs?authorId=${authorId}`,
+          `https://takichay.herokuapp.com/api/songs?authorId=${authorId}`,
           {
             method: "GET",
             headers: {
@@ -144,7 +144,7 @@ export default function Artist({
                   </button>
                 ) : (
                   <button
-                    className="px-4 py-2 text-white bg-green-600 rounded-full"
+                    className="px-4 py-2 text-white bg-blue-600 rounded-full"
                     onClick={handleSubscribe}
                   >
                     Suscribirse
@@ -179,7 +179,7 @@ export default function Artist({
                         />
                         <Play
                           className="absolute transition-transform cursor-pointer right-2 bottom-4 group-hover:scale-110"
-                          fill="text-green-200"
+                          fill="text-blue-200"
                           width={60}
                           height={60}
                         />
