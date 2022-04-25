@@ -9,7 +9,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>{`IndieSingles - ${
+        <title>{`Takichay - ${
           router.pathname === "/"
             ? "Home"
             : // routerp.pathname with uppercase first letter
