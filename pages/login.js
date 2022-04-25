@@ -57,7 +57,7 @@ export default function Login() {
   }, [token]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen text-gray-200 bg-black ">
+    <div className="flex flex-col items-center justify-center h-screen text-black bg-gray-200 ">
       <Logo className="w-1/2 h-20 " />
       <h1 className="h-12 text-xl">
         Es momento de descubrir o compartir nueva musica
@@ -98,7 +98,7 @@ export default function Login() {
           Iniciar Session
         </button>
         <Link href="/register">
-          <a className="flex flex-col h-10 px-20 text-gray-300 hover:text-gray-100 ">
+          <a className="flex flex-col h-10 px-20 text-black hover:text-gray-800 ">
             Ir a Registrarse
           </a>
         </Link>

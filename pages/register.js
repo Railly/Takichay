@@ -45,7 +45,7 @@ export default function Register() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen text-gray-200 bg-black ">
+    <div className="flex flex-col items-center justify-center h-screen text-black bg-gray-200 ">
       <Logo className="w-1/2 h-20 " />
       <h1 className="h-12 text-xl">
         Registrate y comparte tus canciones con el mundo
